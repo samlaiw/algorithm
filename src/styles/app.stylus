@@ -1,0 +1,26 @@
+body
+  background #1111
+
+.matrix
+  width 800px
+  height 800px
+  table-layout fixed
+  td
+    cursor pointer
+    &.blocked
+      background black
+    &.start
+      background var(--bs-primary)
+      color white
+    &.end
+      background var(--bs-danger)
+      color white
+    &.path
+      background var(--bs-warning)
+
+#inputS
+  text-transform capitalize
+
+select:disabled
+  cursor not-allowed
+  opacity 0.7 !important
